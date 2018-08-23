@@ -7,8 +7,8 @@
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
 # server "db.example.com", user: "deploy", roles: %w{db}
 
-# set :rails_env, 'staging'
-# set :branch, 'staging'
+set :rails_env, 'staging'
+set :branch, 'staging'
 server "23.106.142.82:28962", user: 'root', roles: %w{web app db sidekiq}
 
 # role-based syntax
