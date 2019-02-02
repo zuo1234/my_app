@@ -10,6 +10,7 @@
 set :rails_env, 'staging'
 set :branch, 'staging'
 server "23.106.142.82:28962", user: 'root', roles: %w{web app db sidekiq}
+set :puma_conf, File.join(fetch(:deploy_to), 'current/config/puma/staging.rb')
 
 # role-based syntax
 # ==================
