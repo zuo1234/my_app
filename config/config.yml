@@ -1,0 +1,17 @@
+defaults: &defaults
+  mobile_regexp: '\A(^(13\d|14[57]|15[^4,\D]|166|17\d|18\d|19[89])\d{8})\z'
+  sidekiq_redis:
+    url: 'redis://127.0.0.1:6379/15'
+    password:
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+staging:
+  <<: *defaults
+
+production:
+  <<: *defaults
