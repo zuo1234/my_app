@@ -11,7 +11,7 @@ set :rails_env, 'production'
 set :branch, 'master'
 
 server "47.93.234.202", user: 'ubuntu', roles: %w{web app db sidekiq}
-set :puma_conf, File.join(fetch(:deploy_to), 'config/puma/production.rb')
+set :puma_conf, File.join(fetch(:deploy_to), 'current/config/puma/production.rb')
 
 # role-based syntax
 # ==================
